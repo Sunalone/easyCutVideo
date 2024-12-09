@@ -1,0 +1,34 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.is-message-box {
+  position: fixed !important;
+}
+
+::-webkit-scrollbar {
+  width: 6px
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 6px
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 8px
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  transition: all .2s ease-in-out;
+  background-color: var(--el-scrollbar-bg-color,var(--el-text-color-secondary));
+  opacity: .3;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+  background-color: var(--el-scrollbar-hover-bg-color,var(--el-text-color-secondary));
+}
+
